@@ -6,13 +6,13 @@ The Gold Layer is the business-level data representation, structured to support 
 
 **1. gold.dim_customers**  
 
-Purpose: Stores customer details enriched with demographic and geographic data.  
+* Purpose: Stores customer details enriched with demographic and geographic data.  
 
-Columns:
+* Columns:
 
 | Column Name | Data Type | Description |
 |-------|-----|----------|
-| Customer Key | INT | Surrogate key uniquely identifying each customer record in the dimension table. |
+| Customer Key | INT | Surrogate key uniquely identifying each customer record in the customer dimension table. |
 | customer_id | INT | Unique numerical identifier assigned to each customer. |
 |customer_number | NVARCHAR(50) | Alphanumeric identifier representing the customer, used for tracking and referencing.|
 |first_name | NVARCHAR(50) | The customer's first name, as recorded in the system.|
@@ -22,3 +22,12 @@ Columns:
 |gender | NVARCHAR(50) | The gender of the customer (e.g.,'Male','Female','N/A').|
 |birthdate | DATE | The date of birth of the customer, formatted as YYYY-MM-DD (e.g.,1992-01-01).|
 |create_date | DATE | The date and time when the customer record was created in the system.|
+
+**2. gold.dim_products**
+
+* Purpose: Provide information about the products and their attributes.
+* Columns:
+
+| Column Name | Data Type | Description | 
+|-------|-----|----------|
+| Product Key | INT | Surrogate key uniquely identifying each product record in the product dimension table. |
