@@ -9,6 +9,9 @@ Script Purpose:
 	Each view performs transformations and combines data from the Silver Layer to produce
     a clean, enriched, and business-ready dataset. 
 
+Usage:
+	- These views can be queired directly for analytics and reporting.
+==============================================================================================
 */
 
 -- ===========================================================================================
